@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+}
+:root {
+  --bg-color-1: #b3292f;
+  --bg-color-2: #6d3074;
+  --btn-color-1: #c03058;
+  --btn-color-2: #b93d61;
+  --block-1-color: #d7a3af;
+  --block-2-color: #af6e8c;
+}
+body {
+  background-image: linear-gradient(
+    to bottom right,
+    var(--bg-color-1),
+    var(--bg-color-2)
+  );
+}
+.main-block {
+  width: 60rem;
+  height: 35rem;
+  border-radius: 0.5rem;
+  margin: 9rem auto;
+  background: linear-gradient(
+    to right,
+    #d7a3af 0%,
+    #d7a3af 50%,
+    #af6e8c 50%,
+    #af6e8c 100%
+  );
+}
+.start-btn {
+  text-align: center;
+  opacity: 0.8;
+}
+.start-btn button {
+  border: none;
+  background-color: #fff;
+  font-size: 1rem;
+  padding: 0.6rem 1.5rem;
+  border-radius: 20px;
+  margin-top: 1.5rem;
+  cursor: pointer;
+}
+.player-heading {
+  display: flex;
+  justify-content: space-around;
+  font-size: 2.5rem;
+  font-weight: 400;
+  opacity: 0.7;
+}
+.dice-scores {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 5rem;
+  color: var(--bg-color-1);
+  margin-top: 1rem;
+}
+.stats-play {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 6rem;
+}
+.stat {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 1rem;
+  background-color: var(--btn-color-1);
+  width: 200px;
+  border-radius: 12px;
+  color: #ffff;
+  opacity: 0.8;
+  font-size: 1rem;
+}
+.stat-text {
+  opacity: 0.7;
+}
+.stat-val {
+  font-size: 2rem;
+}
+.play-hold-btns {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.button-1,
+.button-2 {
+  text-align: center;
+}
+.btn {
+  border: none;
+  padding: 0.3rem 1rem;
+  background-color: #fff;
+  font-size: 1rem;
+  margin: 0.5rem;
+  border-radius: 1.5rem;
+  cursor: pointer;
+}
+.btn:hover,
+.start-btn button:hover {
+  opacity: 0.8;
+}
